@@ -8,6 +8,9 @@ var combo_time = 0
 var character_alive = false
 var current_combo = COMBO_MIN
 
+signal update_points(int)
+signal update_combo(int)
+
 @onready var globals = get_node("/root/Globals")
 
 # Called when the node enters the scene tree for the first time.
@@ -33,11 +36,11 @@ func _on_monster_killed(monster_type):
 func _on_increase_combo(combo_raise : int):
 	current_combo += combo_raise
 	combo_time = COMBO_MAX_TIME
-	get_node("UIPontos/Container_pontos/Texto_combo").text = "Combo: " + str(int(current_combo))
+	emit_signal("update_combo", current_combo)
 
 func _update_points(points : float):
 	current_points += points
-	get_node("UIPontos/Container_pontos/Texto_pontos").text = "Pontos: " + str(int(current_points))
+	emit_signal("update_points", current_points)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

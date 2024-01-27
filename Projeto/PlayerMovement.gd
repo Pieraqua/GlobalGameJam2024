@@ -7,15 +7,17 @@ var hitpoints = MAX_HP
 var damage_sources : Array[int] = []
 
 @onready var Globals = get_node("/root/MainScene")
+@onready var UI_HP = get_node("/root/MainScene/UI/Container_pontos/HPBar")
 
 func _ready():
 	Globals.set("player", self)
 	hitpoints = MAX_HP
+	UI_HP.value = hitpoints
 
 func _process(delta):
 	if !damage_sources.is_empty():
 		hitpoints -= damage_sources.max()*delta
-		print(hitpoints)
+		UI_HP.value = hitpoints
 
 func _physics_process(_delta):
 
