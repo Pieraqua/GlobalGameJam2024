@@ -10,8 +10,8 @@ height = 110.0
 [node name="Player" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-collision_layer = 2
-collision_mask = 2
+collision_layer = 0
+collision_mask = 4
 script = ExtResource("1_20k8a")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
@@ -19,6 +19,7 @@ texture = ExtResource("2_s7gtw")
 
 [node name="Area2D" type="Area2D" parent="CharacterBody2D"]
 disable_mode = 2
+collision_mask = 2
 input_pickable = false
 
 [node name="EnemyCollision" type="CollisionShape2D" parent="CharacterBody2D/Area2D"]
@@ -26,3 +27,6 @@ shape = SubResource("CapsuleShape2D_eekxe")
 
 [node name="TerrainCollision" type="CollisionShape2D" parent="CharacterBody2D"]
 shape = SubResource("CapsuleShape2D_eekxe")
+
+[connection signal="body_entered" from="CharacterBody2D/Area2D" to="CharacterBody2D" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="CharacterBody2D/Area2D" to="CharacterBody2D" method="_on_area_2d_body_exited"]
