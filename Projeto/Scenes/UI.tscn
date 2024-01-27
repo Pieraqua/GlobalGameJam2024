@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://b8lupb8ss615o"]
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Container_pontos" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+alignment = 1
+
+[node name="Texto_combo" type="Label" parent="Container_pontos"]
+layout_mode = 2
+text = "Combo: 0"
+
+[node name="Texto_pontos" type="Label" parent="Container_pontos"]
+layout_mode = 2
+text = "Pontos: 0"
+
+[node name="HPBar" type="ProgressBar" parent="Container_pontos"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+fill_mode = 1
