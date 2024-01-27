@@ -1,10 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://ddc2kfc86e7l0"]
+[gd_scene load_steps=5 format=3 uid="uid://ddc2kfc86e7l0"]
 
+[ext_resource type="Script" path="res://Scenes/Mapas/Mapa.gd" id="1_ct5bp"]
 [ext_resource type="PackedScene" uid="uid://bc4ywdu4ku8e4" path="res://Scenes/Personagens/player.tscn" id="1_oukqq"]
 [ext_resource type="PackedScene" uid="uid://dyxi1oao3p1uh" path="res://Scenes/Objetos/Arvore.tscn" id="2_5tqrl"]
 [ext_resource type="PackedScene" uid="uid://csx80p08w6qwx" path="res://Scenes/Personagens/Enemy.tscn" id="2_d7n1o"]
 
 [node name="Mapa1" type="Node2D"]
+script = ExtResource("1_ct5bp")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = -227.0

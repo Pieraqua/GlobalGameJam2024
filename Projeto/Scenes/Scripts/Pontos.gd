@@ -1,0 +1,53 @@
+extends Node
+
+const COMBO_MAX_TIME = 5
+const COMBO_MIN = 1
+
+var current_points = 0
+var combo_time = 0
+var character_alive = false
+var current_combo = COMBO_MIN
+
+@onready var globals = get_node("/root/Globals")
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	_update_points(0)
+	_on_increase_combo(0)
+	pass # Replace with function body.
+
+func _on_monster_killed(monster_type):
+	var combo_raise = 1
+	var pontos = 0
+	
+	if(monster_type <= globals.monsters.len()):
+		pontos = globals.monsters[monster_type][0]
+		combo_raise = globals.monsters[monster_type][1]
+	else:
+		print("_on_monster_killed: monster_type não registrado")
+	
+	_update_points(pontos)
+	_on_increase_combo(combo_raise)
+	pass
+
+func _on_increase_combo(combo_raise : int):
+	current_combo += combo_raise
+	combo_time = COMBO_MAX_TIME
+	get_node("UIPontos/Container_pontos/Texto_combo").text = "Combo: " + str(int(current_combo))
+
+func _update_points(points : float):
+	current_points += points
+	get_node("UIPontos/Container_pontos/Texto_pontos").text = "Pontos: " + str(int(current_points))
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	if character_alive:
+		_update_points(current_combo * delta)
+	combo_time -= delta
+	if combo_time == 0:
+		current_combo = COMBO_MIN
+	pass
+
+func _on_map_loaded():
+	character_alive = true
+	pass # Replace with function body.

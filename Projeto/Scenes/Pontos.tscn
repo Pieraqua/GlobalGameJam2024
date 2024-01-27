@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqoqtk7hxjntd"]
+
+[ext_resource type="Script" path="res://Scenes/Scripts/Pontos.gd" id="1_wfdgj"]
+
+[node name="Pontos" type="Node"]
+script = ExtResource("1_wfdgj")
+
+[node name="UIPontos" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Container_pontos" type="HBoxContainer" parent="UIPontos"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+alignment = 1
+
+[node name="Texto_combo" type="Label" parent="UIPontos/Container_pontos"]
+layout_mode = 2
+text = "Combo: 0"
+
+[node name="Texto_pontos" type="Label" parent="UIPontos/Container_pontos"]
+layout_mode = 2
+text = "Pontos: 0"
