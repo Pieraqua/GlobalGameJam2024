@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://ddc2kfc86e7l0" path="res://Scenes/Mapas/Mapa1.tscn" id="1_fsvd2"]
 [ext_resource type="PackedScene" uid="uid://cqoqtk7hxjntd" path="res://Scenes/Pontos.tscn" id="3_55jlg"]
 [ext_resource type="PackedScene" uid="uid://b8lupb8ss615o" path="res://Scenes/UI.tscn" id="4_8ox8a"]
-[ext_resource type="Script" path="res://Scenes/UI.gd" id="5_10l5b"]
+[ext_resource type="Script" path="res://Scenes/Scripts/UI.gd" id="5_10l5b"]
 
 [node name="MainScene" type="Node"]
 script = ExtResource("1_41dye")
