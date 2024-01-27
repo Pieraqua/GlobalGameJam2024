@@ -18,6 +18,9 @@ func _process(delta):
 	if !damage_sources.is_empty():
 		hitpoints -= damage_sources.max()*delta
 		UI_HP.value = hitpoints
+		if hitpoints < 0:
+			print("Fim de jogo!")
+			get_tree().change_scene_to_file("res://Scenes/MainMenu.tscn")
 
 func _physics_process(_delta):
 

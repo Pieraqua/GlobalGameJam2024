@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 const SPEED = 100.0
-const ATK = 1
+const ATK = 5
 const HP_MAX = 10
 
 var hitpoints = HP_MAX
