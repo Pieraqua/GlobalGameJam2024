@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bc4ywdu4ku8e4"]
+
+[ext_resource type="Script" path="res://PlayerMovement.gd" id="1_20k8a"]
+[ext_resource type="Texture2D" uid="uid://v81u6ci5y18e" path="res://sprites/clown_sprite.png" id="2_s7gtw"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3wfv7"]
+radius = 29.0
+height = 110.0
+
+[node name="Player" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_20k8a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CapsuleShape2D_3wfv7")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("2_s7gtw")
