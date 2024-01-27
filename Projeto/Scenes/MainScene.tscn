@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scenes/Scripts/Globals.gd" id="1_41dye"]
 [ext_resource type="PackedScene" uid="uid://ddc2kfc86e7l0" path="res://Scenes/Mapas/Mapa1.tscn" id="1_fsvd2"]
-[ext_resource type="Script" path="res://Scenes/Scripts/Pontos.gd" id="3_gvpch"]
+[ext_resource type="PackedScene" uid="uid://cqoqtk7hxjntd" path="res://Scenes/Pontos.tscn" id="3_55jlg"]
 
 [node name="MainScene" type="Node"]
 script = ExtResource("1_41dye")
@@ -10,7 +10,6 @@ script = ExtResource("1_41dye")
 [node name="Mapa1" parent="." instance=ExtResource("1_fsvd2")]
 position = Vector2(-55.1456, 58.5269)
 
-[node name="Pontos" type="Node" parent="."]
-script = ExtResource("3_gvpch")
+[node name="Pontos" parent="." instance=ExtResource("3_55jlg")]
 
-[connection signal="map_loaded" from="Mapa1" to="Pontos" method="_on_mapa_1_map_loaded"]
+[connection signal="map_loaded" from="Mapa1" to="Pontos" method="_on_map_loaded"]
