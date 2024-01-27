@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://btxg6pnogbtyu"]
+[gd_scene load_steps=7 format=3 uid="uid://btxg6pnogbtyu"]
 
 [ext_resource type="Texture2D" uid="uid://dcb23ll4vwm4g" path="res://sprites/spriteBuzina.png" id="1_0wl05"]
 
@@ -31,8 +31,19 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_36y85"]
+radius = 532.635
+
 [node name="Buzina" type="Node2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_xjikq")
-frame_progress = 0.649397
+frame_progress = 0.0870693
+
+[node name="Hitbox" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="HitboxPrincipal" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(631, 19)
+shape = SubResource("CircleShape2D_36y85")

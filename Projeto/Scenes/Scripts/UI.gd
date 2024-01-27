@@ -1,4 +1,4 @@
-extends Control
+extends CanvasLayer
 
 func _on_update_combo(current_combo : int):
 	get_node("/root/MainScene/UI/Container_pontos/Texto_combo").text = "Combo: " + str(int(current_combo))

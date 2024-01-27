@@ -1,11 +1,123 @@
-[gd_scene load_steps=4 format=3 uid="uid://bc4ywdu4ku8e4"]
+[gd_scene load_steps=20 format=3 uid="uid://bc4ywdu4ku8e4"]
 
 [ext_resource type="Script" path="res://Scenes/Scripts/PlayerMovement.gd" id="1_luyq8"]
-[ext_resource type="Texture2D" uid="uid://v81u6ci5y18e" path="res://sprites/clown_sprite.png" id="2_s7gtw"]
+[ext_resource type="Texture2D" uid="uid://ddmx8k1ouq4iv" path="res://sprites/Potatos_Idle_Front.png" id="2_vr5xl"]
+[ext_resource type="Texture2D" uid="uid://br66lrvlhjrm5" path="res://sprites/Potatos_WalkC_Front.png" id="3_okiyc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ommt"]
+atlas = ExtResource("2_vr5xl")
+region = Rect2(0, 0, 32, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p83bi"]
+atlas = ExtResource("2_vr5xl")
+region = Rect2(32, 0, 32, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_quijh"]
+atlas = ExtResource("2_vr5xl")
+region = Rect2(64, 0, 32, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lvc6p"]
+atlas = ExtResource("2_vr5xl")
+region = Rect2(96, 0, 32, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n52ha"]
+atlas = ExtResource("2_vr5xl")
+region = Rect2(128, 0, 32, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ddhr"]
+atlas = ExtResource("2_vr5xl")
+region = Rect2(160, 0, 32, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u8xe8"]
+atlas = ExtResource("3_okiyc")
+region = Rect2(0, 0, 32, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0fykn"]
+atlas = ExtResource("3_okiyc")
+region = Rect2(32, 0, 32, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l8b5w"]
+atlas = ExtResource("3_okiyc")
+region = Rect2(64, 0, 32, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xdn0q"]
+atlas = ExtResource("3_okiyc")
+region = Rect2(96, 0, 32, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rd61f"]
+atlas = ExtResource("3_okiyc")
+region = Rect2(128, 0, 32, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gaep3"]
+atlas = ExtResource("3_okiyc")
+region = Rect2(160, 0, 32, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qc5rl"]
+atlas = ExtResource("3_okiyc")
+region = Rect2(192, 0, 32, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ixmjj"]
+atlas = ExtResource("3_okiyc")
+region = Rect2(224, 0, 32, 33)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f488a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ommt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p83bi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_quijh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lvc6p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n52ha")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ddhr")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u8xe8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0fykn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l8b5w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xdn0q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rd61f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gaep3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qc5rl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ixmjj")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_eekxe"]
-radius = 34.0
-height = 110.0
+radius = 45.0
+height = 122.0
 
 [node name="Player" type="Node2D"]
 
@@ -14,8 +126,12 @@ collision_layer = 0
 collision_mask = 4
 script = ExtResource("1_luyq8")
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
-texture = ExtResource("2_s7gtw")
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_f488a")
+animation = &"idle"
 
 [node name="Area2D" type="Area2D" parent="CharacterBody2D"]
 disable_mode = 2
