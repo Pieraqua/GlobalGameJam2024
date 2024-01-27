@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyxi1oao3p1uh"]
+
+[ext_resource type="Texture2D" uid="uid://c8b5c2wmqqjjf" path="res://sprites/Arvore.png" id="1_ipx6s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sgytp"]
+size = Vector2(16, 30)
+
+[node name="Arvore" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("RectangleShape2D_sgytp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ipx6s")
