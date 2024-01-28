@@ -1,0 +1,71 @@
+[gd_scene load_steps=10 format=3 uid="uid://rg407sfcs8vb"]
+
+[ext_resource type="Texture2D" uid="uid://cuqo53x5gghqd" path="res://sprites/Objetos/Blade_of_Joy.png" id="1_ko1v1"]
+[ext_resource type="Script" path="res://Scenes/Objetos/Weapon.gd" id="1_pwis4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4gw3o"]
+atlas = ExtResource("1_ko1v1")
+region = Rect2(0, 0, 60, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vfbck"]
+atlas = ExtResource("1_ko1v1")
+region = Rect2(60, 0, 60, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1dtkr"]
+atlas = ExtResource("1_ko1v1")
+region = Rect2(120, 0, 60, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a03u5"]
+atlas = ExtResource("1_ko1v1")
+region = Rect2(180, 0, 60, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0aigh"]
+atlas = ExtResource("1_ko1v1")
+region = Rect2(240, 0, 60, 60)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xjikq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4gw3o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vfbck")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1dtkr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a03u5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0aigh")
+}],
+"loop": false,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_36y85"]
+radius = 37.0
+
+[node name="Espada" type="Node2D"]
+script = ExtResource("1_pwis4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(26, -20)
+sprite_frames = SubResource("SpriteFrames_xjikq")
+frame = 4
+frame_progress = 1.0
+
+[node name="Hitbox" type="Area2D" parent="."]
+position = Vector2(26, -20)
+collision_layer = 0
+collision_mask = 2
+
+[node name="HitboxPrincipal" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(15, 13)
+shape = SubResource("CircleShape2D_36y85")
+
+[node name="ReloadTimer" type="Timer" parent="."]
+one_shot = true
