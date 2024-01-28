@@ -1,8 +1,8 @@
 [gd_scene load_steps=20 format=3 uid="uid://bc4ywdu4ku8e4"]
 
 [ext_resource type="Script" path="res://Scenes/Scripts/PlayerMovement.gd" id="1_luyq8"]
-[ext_resource type="Texture2D" path="res://sprites/Potatos_Idle_Front.png" id="2_4krja"]
-[ext_resource type="Texture2D" path="res://sprites/Potatos_WalkC_Front.png" id="3_hha4h"]
+[ext_resource type="Texture2D" uid="uid://ddmx8k1ouq4iv" path="res://sprites/Potatos_Idle_Front.png" id="2_4krja"]
+[ext_resource type="Texture2D" uid="uid://br66lrvlhjrm5" path="res://sprites/Potatos_WalkC_Front.png" id="3_hha4h"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l0dd3"]
 atlas = ExtResource("2_4krja")

@@ -1,22 +1,27 @@
-[gd_scene load_steps=6 format=3 uid="uid://ddc2kfc86e7l0"]
+[gd_scene load_steps=8 format=3 uid="uid://ddc2kfc86e7l0"]
 
-[ext_resource type="Script" path="res://Scenes/Mapas/Mapa.gd" id="1_ct5bp"]
+[ext_resource type="Script" path="res://Scenes/Scripts/Mapa.gd" id="1_nfo24"]
 [ext_resource type="PackedScene" uid="uid://dyxi1oao3p1uh" path="res://Scenes/Objetos/Arvore.tscn" id="2_5tqrl"]
 [ext_resource type="PackedScene" uid="uid://csx80p08w6qwx" path="res://Scenes/Personagens/Enemy.tscn" id="2_d7n1o"]
 [ext_resource type="PackedScene" uid="uid://bc4ywdu4ku8e4" path="res://Scenes/Personagens/Player.tscn" id="2_hihl7"]
-[ext_resource type="PackedScene" uid="uid://cgscb5nc0gvxp" path="res://Scenes/Waves/Wave_1.tscn" id="5_etfie"]
+[ext_resource type="Texture2D" uid="uid://mbdn18j5cdk0" path="res://sprites/Tilemap/tijolo-certo.png" id="5_hoo1e"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kj6xp"]
+texture = ExtResource("5_hoo1e")
+0:0/size_in_atlas = Vector2i(5, 5)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_nk2de"]
+tile_size = Vector2i(80, 80)
+sources/5 = SubResource("TileSetAtlasSource_kj6xp")
 
 [node name="Mapa1" type="Node2D"]
-script = ExtResource("1_ct5bp")
+script = ExtResource("1_nfo24")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_left = -227.0
-offset_top = -177.0
-offset_right = 1393.0
-offset_bottom = 766.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-color = Color(0.564706, 0.776471, 0.843137, 1)
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_nk2de")
+format = 2
+layer_0/tile_data = PackedInt32Array(327685, 5, 0, -1, 5, 0, -65536, 5, 0, 0, 5, 0, 1, 5, 0, 65538, 5, 0, 65539, 5, 0, 131075, 5, 0, 131076, 5, 0, 196613, 5, 0, 196614, 5, 0, 262150, 5, 0, 262151, 5, 0, 327688, 5, 0, -65535, 5, 0, -65534, 5, 0, -65533, 5, 0, -65532, 5, 0, -65531, 5, 0, -65530, 5, 0, -65529, 5, 0, -65528, 5, 0, -65527, 5, 0, 10, 5, 0, 11, 5, 0, 65547, 5, 0, 131083, 5, 0, -65523, 5, 0, 13, 5, 0, 65549, 5, 0, 131085, 5, 0, 196621, 5, 0, 262157, 5, 0, 327693, 5, 0, 393229, 5, 0, 458765, 5, 0, -65522, 5, 0, 14, 5, 0, 65550, 5, 0, 131086, 5, 0, 196622, 5, 0, 262158, 5, 0, 327694, 5, 0, 393230, 5, 0, 458766, 5, 0, 524302, 5, 0, 524301, 5, 0, 524300, 5, 0, 524299, 5, 0, 524298, 5, 0, 524297, 5, 0, 524296, 5, 0, 524295, 5, 0, 524294, 5, 0, 524293, 5, 0, 524292, 5, 0, 524291, 5, 0, 524290, 5, 0, 524289, 5, 0, 524288, 5, 0, 589823, 5, 0, 524287, 5, 0, 458751, 5, 0, 393215, 5, 0, 327679, 5, 0, 262143, 5, 0, 196607, 5, 0, 131071, 5, 0, 65535, 5, 0, 131072, 5, 0, 196608, 5, 0, 262144, 5, 0, 327680, 5, 0, 393216, 5, 0, 458752, 5, 0, 65536, 5, 0, 2, 5, 0, 131074, 5, 0, 196610, 5, 0, 262146, 5, 0, 327681, 5, 0, 262145, 5, 0, 3, 5, 0, 196609, 5, 0, 131073, 5, 0, 65537, 5, 0, 4, 5, 0, 5, 5, 0, 6, 5, 0, 65541, 5, 0, 196611, 5, 0, 65540, 5, 0, 196612, 5, 0, 327682, 5, 0, 393217, 5, 0, 262147, 5, 0, 262148, 5, 0, 327683, 5, 0, 393218, 5, 0, 131078, 5, 0, 131079, 5, 0, 196615, 5, 0, 262149, 5, 0, 393220, 5, 0, 393219, 5, 0, 458754, 5, 0, 65543, 5, 0, 65544, 5, 0, 327684, 5, 0, 458753, 5, 0, 327686, 5, 0, 393221, 5, 0, 131080, 5, 0, 196617, 5, 0, 262152, 5, 0, 393224, 5, 0, 393223, 5, 0, 458758, 5, 0, 458757, 5, 0, 458756, 5, 0, 458755, 5, 0, 458759, 5, 0, 131077, 5, 0, 65542, 5, 0, 393222, 5, 0, 7, 5, 0, 327687, 5, 0, 8, 5, 0, 196616, 5, 0, 458760, 5, 0, 9, 5, 0, 65545, 5, 0, 131081, 5, 0, 262153, 5, 0, 327689, 5, 0, 393225, 5, 0, 458761, 5, 0, -65526, 5, 0, 65546, 5, 0, 131082, 5, 0, 196618, 5, 0, 262154, 5, 0, 327690, 5, 0, 393226, 5, 0, 458762, 5, 0, -65525, 5, 0, 196619, 5, 0, 262155, 5, 0, 327691, 5, 0, 393227, 5, 0, 458763, 5, 0, -65524, 5, 0, 12, 5, 0, 65548, 5, 0, 131084, 5, 0, 196620, 5, 0, 262156, 5, 0, 327692, 5, 0, 393228, 5, 0, 458764, 5, 0)
 
 [node name="Player" parent="." instance=ExtResource("2_hihl7")]
 position = Vector2(301, 188)
@@ -43,12 +48,10 @@ scale = Vector2(2, 2)
 [node name="Inimigos" type="Node" parent="."]
 
 [node name="Enemy" parent="Inimigos" instance=ExtResource("2_d7n1o")]
-position = Vector2(-35, 425)
+position = Vector2(64, 352)
 
 [node name="Enemy2" parent="Inimigos" instance=ExtResource("2_d7n1o")]
-position = Vector2(451, 13)
+position = Vector2(370, 42)
 
 [node name="Enemy3" parent="Inimigos" instance=ExtResource("2_d7n1o")]
-position = Vector2(4, 121)
-
-[node name="Wave1" parent="Inimigos" instance=ExtResource("5_etfie")]
+position = Vector2(65, 166)
