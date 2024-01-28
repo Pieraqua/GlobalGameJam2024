@@ -135,7 +135,7 @@ script = ExtResource("1_luyq8")
 scale = Vector2(5, 5)
 sprite_frames = SubResource("SpriteFrames_f488a")
 animation = &"idle"
-frame_progress = 0.189436
+frame_progress = 0.446731
 
 [node name="Area2D" type="Area2D" parent="CharacterBody2D"]
 visible = false
