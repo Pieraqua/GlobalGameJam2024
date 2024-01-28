@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://br66lrvlhjrm5"
-path="res://.godot/imported/Potatos_WalkC_Front.png-02074b23e9d82ad2af6f1a31eee9ac74.ctex"
+uid="uid://dr2nukj78b0lw"
+path="res://.godot/imported/asarvressomosnozes.png-9b118d820bb9fb1d1f6ad8f1e7f6810a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Potatos_WalkC_Front.png"
-dest_files=["res://.godot/imported/Potatos_WalkC_Front.png-02074b23e9d82ad2af6f1a31eee9ac74.ctex"]
+source_file="res://sprites/Tilemap/asarvressomosnozes.png"
+dest_files=["res://.godot/imported/asarvressomosnozes.png-9b118d820bb9fb1d1f6ad8f1e7f6810a.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c38rj0lhdxcu3"
-path="res://.godot/imported/Enemy.png-171e5b7888d460960e4345ce6776cbde.ctex"
+uid="uid://bd3bkiu0x66eo"
+path="res://.godot/imported/florzinha.png-06b00cf2bad8bea8dde7a363c683f86b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Enemy.png"
-dest_files=["res://.godot/imported/Enemy.png-171e5b7888d460960e4345ce6776cbde.ctex"]
+source_file="res://sprites/Tilemap/florzinha.png"
+dest_files=["res://.godot/imported/florzinha.png-06b00cf2bad8bea8dde7a363c683f86b.ctex"]
 
 [params]
 
