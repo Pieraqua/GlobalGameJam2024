@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://ddc2kfc86e7l0"]
+[gd_scene load_steps=6 format=3 uid="uid://ddc2kfc86e7l0"]
 
 [ext_resource type="Script" path="res://Scenes/Mapas/Mapa.gd" id="1_ct5bp"]
 [ext_resource type="PackedScene" uid="uid://dyxi1oao3p1uh" path="res://Scenes/Objetos/Arvore.tscn" id="2_5tqrl"]
 [ext_resource type="PackedScene" uid="uid://csx80p08w6qwx" path="res://Scenes/Personagens/Enemy.tscn" id="2_d7n1o"]
 [ext_resource type="PackedScene" uid="uid://bc4ywdu4ku8e4" path="res://Scenes/Personagens/Player.tscn" id="2_hihl7"]
+[ext_resource type="PackedScene" uid="uid://cgscb5nc0gvxp" path="res://Scenes/Waves/Wave_1.tscn" id="5_etfie"]
 
 [node name="Mapa1" type="Node2D"]
 script = ExtResource("1_ct5bp")
@@ -49,3 +50,5 @@ position = Vector2(451, 13)
 
 [node name="Enemy3" parent="Inimigos" instance=ExtResource("2_d7n1o")]
 position = Vector2(4, 121)
+
+[node name="Wave1" parent="Inimigos" instance=ExtResource("5_etfie")]

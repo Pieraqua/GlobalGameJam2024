@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bef5nhvt4txe8"]
 
-[ext_resource type="Script" path="res://StartGame.gd" id="1_qw4th"]
+[ext_resource type="Script" path="res://Scenes/Scripts/StartGame.gd" id="1_qw4th"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3

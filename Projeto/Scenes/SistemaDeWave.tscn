@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://db5yqf161g13u"]
+
+[ext_resource type="Script" path="res://Scenes/Scripts/SistemaDeWave.gd" id="1_kwebl"]
+
+[node name="SistemaDeWave" type="Node"]
+script = ExtResource("1_kwebl")
+
+[node name="Timer3min" type="Timer" parent="."]
+wait_time = 300.0

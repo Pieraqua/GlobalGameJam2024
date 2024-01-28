@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgscb5nc0gvxp"]
+
+[ext_resource type="PackedScene" uid="uid://csx80p08w6qwx" path="res://Scenes/Personagens/Enemy.tscn" id="1_apbl6"]
+
+[node name="Wave1" type="Node2D"]
+
+[node name="Enemy7" parent="." instance=ExtResource("1_apbl6")]
+position = Vector2(560, 56)
+
+[node name="Enemy6" parent="." instance=ExtResource("1_apbl6")]
+position = Vector2(450, 54)
+
+[node name="Enemy5" parent="." instance=ExtResource("1_apbl6")]
+position = Vector2(374, 96)
+
+[node name="Enemy2" parent="." instance=ExtResource("1_apbl6")]
+position = Vector2(500, 59)
+
+[node name="Enemy" parent="." instance=ExtResource("1_apbl6")]
+position = Vector2(278, 74)
+
+[node name="Enemy3" parent="." instance=ExtResource("1_apbl6")]
+position = Vector2(334, 67)
+
+[node name="Enemy4" parent="." instance=ExtResource("1_apbl6")]
+position = Vector2(402, 60)
