@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddmx8k1ouq4iv"
-path="res://.godot/imported/Potatos_Idle_Front.png-b2463734883460001dcfedcf909f13f6.ctex"
+uid="uid://bd3bkiu0x66eo"
+path="res://.godot/imported/florzinha.png-06b00cf2bad8bea8dde7a363c683f86b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Potatos_Idle_Front.png"
-dest_files=["res://.godot/imported/Potatos_Idle_Front.png-b2463734883460001dcfedcf909f13f6.ctex"]
+source_file="res://sprites/Tilemap/florzinha.png"
+dest_files=["res://.godot/imported/florzinha.png-06b00cf2bad8bea8dde7a363c683f86b.ctex"]
 
 [params]
 

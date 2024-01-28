@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8b5c2wmqqjjf"
-path="res://.godot/imported/Arvore.png-851e9eed30bb6d6e6cf38ffdf1fa3f3a.ctex"
+uid="uid://c38rj0lhdxcu3"
+path="res://.godot/imported/Enemy.png-835ef0d0bf06d99cbbd2d4ee759c5802.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Arvore.png"
-dest_files=["res://.godot/imported/Arvore.png-851e9eed30bb6d6e6cf38ffdf1fa3f3a.ctex"]
+source_file="res://sprites/Personagens/Enemy.png"
+dest_files=["res://.godot/imported/Enemy.png-835ef0d0bf06d99cbbd2d4ee759c5802.ctex"]
 
 [params]
 

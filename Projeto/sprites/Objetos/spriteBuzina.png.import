@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://nnw6ch72fi2o"
-path="res://.godot/imported/clown_sprite.jpg-aad47cbec7562070326dda5615fdf88b.ctex"
+uid="uid://dcb23ll4vwm4g"
+path="res://.godot/imported/spriteBuzina.png-6193935d852a32d73ecc92e54de692b4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/clown_sprite.jpg"
-dest_files=["res://.godot/imported/clown_sprite.jpg-aad47cbec7562070326dda5615fdf88b.ctex"]
+source_file="res://sprites/Objetos/spriteBuzina.png"
+dest_files=["res://.godot/imported/spriteBuzina.png-6193935d852a32d73ecc92e54de692b4.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcb23ll4vwm4g"
-path="res://.godot/imported/spriteBuzina.png-b35200dca770143f60ec2b5a64a3a9ed.ctex"
+uid="uid://d0c02jsk2mde2"
+path="res://.godot/imported/Potatos_Right_WalkC.png-fb30374a2dc8879c25fad7e3151bb00b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/spriteBuzina.png"
-dest_files=["res://.godot/imported/spriteBuzina.png-b35200dca770143f60ec2b5a64a3a9ed.ctex"]
+source_file="res://sprites/Personagens/Potatos_Right_WalkC.png"
+dest_files=["res://.godot/imported/Potatos_Right_WalkC.png-fb30374a2dc8879c25fad7e3151bb00b.ctex"]
 
 [params]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dyxi1oao3p1uh"]
 
-[ext_resource type="Texture2D" uid="uid://c8b5c2wmqqjjf" path="res://sprites/Arvore.png" id="1_ipx6s"]
+[ext_resource type="Texture2D" uid="uid://c8b5c2wmqqjjf" path="res://sprites/Objetos/Arvore.png" id="1_ipx6s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sgytp"]
 size = Vector2(16, 30)
