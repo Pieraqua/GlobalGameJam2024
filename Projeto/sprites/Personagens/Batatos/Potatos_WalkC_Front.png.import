@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8b5c2wmqqjjf"
-path="res://.godot/imported/Arvore.png-851e9eed30bb6d6e6cf38ffdf1fa3f3a.ctex"
+uid="uid://br66lrvlhjrm5"
+path="res://.godot/imported/Potatos_WalkC_Front.png-61e3ec539446bb77f54fa2a767a895bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Arvore.png"
-dest_files=["res://.godot/imported/Arvore.png-851e9eed30bb6d6e6cf38ffdf1fa3f3a.ctex"]
+source_file="res://sprites/Personagens/Batatos/Potatos_WalkC_Front.png"
+dest_files=["res://.godot/imported/Potatos_WalkC_Front.png-61e3ec539446bb77f54fa2a767a895bb.ctex"]
 
 [params]
 

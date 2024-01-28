@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcb23ll4vwm4g"
-path="res://.godot/imported/spriteBuzina.png-b35200dca770143f60ec2b5a64a3a9ed.ctex"
+uid="uid://desgjbw8khoi2"
+path="res://.godot/imported/mato_novo.png-cf1142aa68937819e8c4d800b9bb2b7b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/spriteBuzina.png"
-dest_files=["res://.godot/imported/spriteBuzina.png-b35200dca770143f60ec2b5a64a3a9ed.ctex"]
+source_file="res://sprites/Tilemap/mato_novo.png"
+dest_files=["res://.godot/imported/mato_novo.png-cf1142aa68937819e8c4d800b9bb2b7b.ctex"]
 
 [params]
 
