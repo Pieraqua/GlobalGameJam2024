@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://bc4ywdu4ku8e4"]
+[gd_scene load_steps=42 format=3 uid="uid://bc4ywdu4ku8e4"]
 
 [ext_resource type="Script" path="res://Scenes/Scripts/PlayerMovement.gd" id="1_luyq8"]
 [ext_resource type="Texture2D" uid="uid://ddmx8k1ouq4iv" path="res://sprites/Personagens/Batatos/Potatos_Idle_Front.png" id="2_ii767"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://br66lrvlhjrm5" path="res://sprites/Personagens/Batatos/Potatos_WalkC_Front.png" id="4_phqdi"]
 [ext_resource type="Texture2D" uid="uid://cbqvlbc5dayfv" path="res://sprites/Personagens/Batatos/Potatos_Left_WalkC.png" id="5_lkgoj"]
 [ext_resource type="Texture2D" uid="uid://d0c02jsk2mde2" path="res://sprites/Personagens/Batatos/Potatos_Right_WalkC.png" id="6_rm55t"]
+[ext_resource type="PackedScene" uid="uid://btxg6pnogbtyu" path="res://Scenes/Objetos/Buzina.tscn" id="7_0nyqa"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l0dd3"]
 atlas = ExtResource("2_ii767")
@@ -290,6 +291,12 @@ shape = SubResource("CapsuleShape2D_eekxe")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 zoom = Vector2(1.5, 1.5)
+
+[node name="Marker2D" type="Marker2D" parent="CharacterBody2D"]
+
+[node name="Buzina" parent="CharacterBody2D/Marker2D" instance=ExtResource("7_0nyqa")]
+position = Vector2(20, 1)
+scale = Vector2(0.035, 0.035)
 
 [connection signal="body_entered" from="CharacterBody2D/Area2D" to="CharacterBody2D" method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="CharacterBody2D/Area2D" to="CharacterBody2D" method="_on_area_2d_body_exited"]

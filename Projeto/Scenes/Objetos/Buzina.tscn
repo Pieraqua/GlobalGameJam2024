@@ -37,10 +37,12 @@ radius = 532.635
 [node name="Buzina" type="Node2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(440, -11)
 sprite_frames = SubResource("SpriteFrames_xjikq")
 frame_progress = 0.0870693
 
 [node name="Hitbox" type="Area2D" parent="."]
+position = Vector2(440, -11)
 collision_layer = 0
 collision_mask = 2
 
