@@ -1,11 +1,24 @@
 extends CharacterBody2D
 
-
 const SPEED = 100.0
+const ATK = 5
+const HP_MAX = 10
+
+var hitpoints = HP_MAX
 
 @onready var Globals = get_node("/root/MainScene")
 @onready var player = Globals.get("player")
 
+func die():
+	var parent = get_parent()
+	get_parent().get_parent().remove_child(parent)
+	pass
+	
+func hit(damage):
+	if(hitpoints <= damage):
+		die()
+	else:
+		hitpoints -= damage
 
 func _physics_process(_delta):
 	# Get the input direction and handle the movement/deceleration.

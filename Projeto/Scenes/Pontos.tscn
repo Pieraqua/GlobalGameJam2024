@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqoqtk7hxjntd"]
+
+[ext_resource type="Script" path="res://Scenes/Scripts/Pontos.gd" id="1_wfdgj"]
+
+[node name="Pontos" type="Node"]
+script = ExtResource("1_wfdgj")
