@@ -3,6 +3,8 @@ extends Node
 var player
 enum MONSTER_TYPES {BASIC, BOSS}
 
+
+
 # Vetor com os dados de cada monstro
 # [ Points, Combo, HP, ATK ] 
 var monsters = [
