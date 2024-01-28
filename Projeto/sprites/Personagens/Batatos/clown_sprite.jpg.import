@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://br66lrvlhjrm5"
-path="res://.godot/imported/Potatos_WalkC_Front.png-4926107dbade5e57f484577a1e702d61.ctex"
+uid="uid://nnw6ch72fi2o"
+path="res://.godot/imported/clown_sprite.jpg-035a5c4e01acc6f109f9a4b99ae16642.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Personagens/Potatos_WalkC_Front.png"
-dest_files=["res://.godot/imported/Potatos_WalkC_Front.png-4926107dbade5e57f484577a1e702d61.ctex"]
+source_file="res://sprites/Personagens/Batatos/clown_sprite.jpg"
+dest_files=["res://.godot/imported/clown_sprite.jpg-035a5c4e01acc6f109f9a4b99ae16642.ctex"]
 
 [params]
 

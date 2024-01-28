@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://r02n64jsvapu"
-path="res://.godot/imported/Potatos_Front_walkC.png-44b72aa9d68c87935e98e301f7205f1a.ctex"
+path="res://.godot/imported/Potatos_Front_walkC.png-9a1cdad82662c5cf8dcc675f12674b73.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Personagens/Potatos_Front_walkC.png"
-dest_files=["res://.godot/imported/Potatos_Front_walkC.png-44b72aa9d68c87935e98e301f7205f1a.ctex"]
+source_file="res://sprites/Personagens/Batatos/Potatos_Front_walkC.png"
+dest_files=["res://.godot/imported/Potatos_Front_walkC.png-9a1cdad82662c5cf8dcc675f12674b73.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://nnw6ch72fi2o"
-path="res://.godot/imported/clown_sprite.jpg-fde36f45e67a6179764e7dffa39ec8ad.ctex"
+uid="uid://cuqo53x5gghqd"
+path="res://.godot/imported/Blade_of_Joy.png-6666572ef07c235f4dac812589994c90.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Personagens/clown_sprite.jpg"
-dest_files=["res://.godot/imported/clown_sprite.jpg-fde36f45e67a6179764e7dffa39ec8ad.ctex"]
+source_file="res://sprites/Objetos/Blade_of_Joy.png"
+dest_files=["res://.godot/imported/Blade_of_Joy.png-6666572ef07c235f4dac812589994c90.ctex"]
 
 [params]
 

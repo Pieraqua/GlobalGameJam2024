@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbqvlbc5dayfv"
-path="res://.godot/imported/Potatos_Left_WalkC.png-6f072142cff2650c0545e31a502c55a4.ctex"
+uid="uid://cashkceohkr18"
+path="res://.godot/imported/arbusto.png-600ac74e970fd1bdf5dce65e20f0542c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Personagens/Potatos_Left_WalkC.png"
-dest_files=["res://.godot/imported/Potatos_Left_WalkC.png-6f072142cff2650c0545e31a502c55a4.ctex"]
+source_file="res://sprites/Tilemap/arbusto.png"
+dest_files=["res://.godot/imported/arbusto.png-600ac74e970fd1bdf5dce65e20f0542c.ctex"]
 
 [params]
 

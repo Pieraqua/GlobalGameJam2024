@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c38rj0lhdxcu3"
-path="res://.godot/imported/Enemy.png-835ef0d0bf06d99cbbd2d4ee759c5802.ctex"
+uid="uid://br66lrvlhjrm5"
+path="res://.godot/imported/Potatos_WalkC_Front.png-61e3ec539446bb77f54fa2a767a895bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Personagens/Enemy.png"
-dest_files=["res://.godot/imported/Enemy.png-835ef0d0bf06d99cbbd2d4ee759c5802.ctex"]
+source_file="res://sprites/Personagens/Batatos/Potatos_WalkC_Front.png"
+dest_files=["res://.godot/imported/Potatos_WalkC_Front.png-61e3ec539446bb77f54fa2a767a895bb.ctex"]
 
 [params]
 

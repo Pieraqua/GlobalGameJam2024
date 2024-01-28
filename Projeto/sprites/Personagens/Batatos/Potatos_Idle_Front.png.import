@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cuqo53x5gghqd"
-path="res://.godot/imported/Blade_of_Joy.png-3c7b4bdc3c6480311466ac62f066d41b.ctex"
+uid="uid://ddmx8k1ouq4iv"
+path="res://.godot/imported/Potatos_Idle_Front.png-696e52b8076cafe59e0e51c8ca3c9304.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Personagens/Blade_of_Joy.png"
-dest_files=["res://.godot/imported/Blade_of_Joy.png-3c7b4bdc3c6480311466ac62f066d41b.ctex"]
+source_file="res://sprites/Personagens/Batatos/Potatos_Idle_Front.png"
+dest_files=["res://.godot/imported/Potatos_Idle_Front.png-696e52b8076cafe59e0e51c8ca3c9304.ctex"]
 
 [params]
 

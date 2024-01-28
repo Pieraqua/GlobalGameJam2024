@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddmx8k1ouq4iv"
-path="res://.godot/imported/Potatos_Idle_Front.png-c70df6b79621500f5741d5e3b024739e.ctex"
+uid="uid://v81u6ci5y18e"
+path="res://.godot/imported/clown_sprite.png-77b95567429fd27908e95e6ff6dae1e3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Personagens/Potatos_Idle_Front.png"
-dest_files=["res://.godot/imported/Potatos_Idle_Front.png-c70df6b79621500f5741d5e3b024739e.ctex"]
+source_file="res://sprites/Personagens/Batatos/clown_sprite.png"
+dest_files=["res://.godot/imported/clown_sprite.png-77b95567429fd27908e95e6ff6dae1e3.ctex"]
 
 [params]
 
