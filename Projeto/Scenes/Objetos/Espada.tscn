@@ -1,0 +1,64 @@
+[gd_scene load_steps=9 format=3 uid="uid://b6237al06f2lq"]
+
+[ext_resource type="Texture2D" uid="uid://cuqo53x5gghqd" path="res://sprites/Objetos/Blade_of_Joy.png" id="1_ko1v1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x6eqj"]
+atlas = ExtResource("1_ko1v1")
+region = Rect2(0, 0, 60, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gydvh"]
+atlas = ExtResource("1_ko1v1")
+region = Rect2(60, 0, 60, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eikh8"]
+atlas = ExtResource("1_ko1v1")
+region = Rect2(120, 0, 60, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6kwsn"]
+atlas = ExtResource("1_ko1v1")
+region = Rect2(180, 0, 60, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eapom"]
+atlas = ExtResource("1_ko1v1")
+region = Rect2(240, 0, 60, 60)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xjikq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x6eqj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gydvh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eikh8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6kwsn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eapom")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_36y85"]
+radius = 27.0
+
+[node name="Espada" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(30, -30)
+sprite_frames = SubResource("SpriteFrames_xjikq")
+frame_progress = 0.384006
+
+[node name="Hitbox" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="HitboxPrincipal" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(30, -19)
+shape = SubResource("CircleShape2D_36y85")
