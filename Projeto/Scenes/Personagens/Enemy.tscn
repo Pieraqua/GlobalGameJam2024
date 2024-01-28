@@ -185,7 +185,7 @@ script = ExtResource("1_xjk6i")
 position = Vector2(0, 2)
 sprite_frames = SubResource("SpriteFrames_8adad")
 animation = &"defeat"
-frame_progress = 0.275532
+frame_progress = 0.701998
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyBody"]
 visible = false

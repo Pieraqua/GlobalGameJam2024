@@ -1,0 +1,19 @@
+[gd_resource type="TileSet" load_steps=5 format=3 uid="uid://u6tj5gi43mwj"]
+
+[ext_resource type="Texture2D" uid="uid://pwud26vmip74" path="res://sprites/Tilemap/mato.png" id="1_kpdbt"]
+[ext_resource type="Texture2D" uid="uid://desgjbw8khoi2" path="res://sprites/Tilemap/mato_novo.png" id="2_oeywt"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g8hi0"]
+texture = ExtResource("1_kpdbt")
+0:0/size_in_atlas = Vector2i(2, 2)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_elf0u"]
+texture = ExtResource("2_oeywt")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[resource]
+tile_size = Vector2i(32, 32)
+sources/6 = SubResource("TileSetAtlasSource_g8hi0")
+sources/7 = SubResource("TileSetAtlasSource_elf0u")
