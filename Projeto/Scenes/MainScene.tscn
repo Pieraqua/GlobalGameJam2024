@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://6tdbvug0kthw"]
+[gd_scene load_steps=8 format=3 uid="uid://6tdbvug0kthw"]
 
 [ext_resource type="Script" path="res://Scenes/Scripts/Globals.gd" id="1_41dye"]
 [ext_resource type="PackedScene" uid="uid://ddc2kfc86e7l0" path="res://Scenes/Mapas/Mapa1.tscn" id="1_fsvd2"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://db5yqf161g13u" path="res://Scenes/SistemaDeWave.tscn" id="3_u2e0w"]
 [ext_resource type="PackedScene" uid="uid://b8lupb8ss615o" path="res://Scenes/UI.tscn" id="4_8ox8a"]
 [ext_resource type="Script" path="res://Scenes/Scripts/UI.gd" id="5_10l5b"]
+[ext_resource type="PackedScene" uid="uid://cik30de5gaaah" path="res://Scenes/ingame_scene.tscn" id="7_tstn0"]
 
 [node name="MainScene" type="Node"]
 script = ExtResource("1_41dye")
@@ -19,6 +20,8 @@ position = Vector2(-55.1456, 58.5269)
 
 [node name="UI" parent="." instance=ExtResource("4_8ox8a")]
 script = ExtResource("5_10l5b")
+
+[node name="IngameScene" parent="." instance=ExtResource("7_tstn0")]
 
 [connection signal="map_loaded" from="Mapa1" to="Pontos" method="_on_map_loaded"]
 [connection signal="update_combo" from="Pontos" to="UI" method="_on_update_combo"]
