@@ -8,11 +8,13 @@ var damage_sources : Array[int] = []
 
 @onready var Globals = get_node("/root/MainScene")
 @onready var UI_HP = get_node("/root/MainScene/UI/Container_pontos/HPBar")
+@onready var _animated_sprite = $AnimatedSprite2D
 
 func _ready():
 	Globals.set("player", self)
 	hitpoints = MAX_HP
 	UI_HP.value = hitpoints
+	_animated_sprite.play()
 
 func _process(delta):
 	if !damage_sources.is_empty():
@@ -29,9 +31,11 @@ func _physics_process(_delta):
 	var direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	if direction:
 		velocity = direction * SPEED
+		_animated_sprite.play("run")
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.y = move_toward(velocity.y, 0, SPEED)
+		_animated_sprite.play("idle")
 
 	move_and_slide()
 
