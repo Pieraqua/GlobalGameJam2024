@@ -14,7 +14,7 @@ func _ready():
 	Globals.set("player", self)
 	hitpoints = MAX_HP
 	UI_HP.value = hitpoints
-	_animated_sprite.play()
+	_animated_sprite.play("idle")
 
 func _process(delta):
 	if !damage_sources.is_empty():
