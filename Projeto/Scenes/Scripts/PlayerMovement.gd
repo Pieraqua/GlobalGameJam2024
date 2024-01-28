@@ -9,7 +9,7 @@ var damage_sources : Array[int] = []
 @onready var Globals = get_node("/root/MainScene")
 @onready var UI_HP = get_node("/root/MainScene/UI/Container_pontos/HPBar")
 @onready var _animated_sprite = $AnimatedSprite2D
-@onready var horn = get_node("/root/MainScene/Mapa1/Player/CharacterBody2D/Marker2D")
+@onready var horn = get_node("WeaponHolster")
 
 func _ready():
 	Globals.set("player", self)
@@ -26,7 +26,6 @@ func _process(delta):
 			get_tree().change_scene_to_file("res://Scenes/MainMenu.tscn")
 
 func _physics_process(_delta):
-
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
@@ -46,8 +45,9 @@ func _physics_process(_delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.y = move_toward(velocity.y, 0, SPEED)
 		_animated_sprite.play("idle")
-		
-	horn.rotation = mouse_direction.angle()
+	
+	if horn != null:
+		horn.rotation = mouse_direction.angle()
 	move_and_slide()
 
 
@@ -63,3 +63,10 @@ func _on_area_2d_body_exited(body):
 	if body.ATK in damage_sources:
 		print("Stopped taking damage from: " + str(body.ATK))
 		damage_sources.erase(body.ATK)
+
+func _input(event):
+	if event.is_action_pressed("attack"):
+		if $WeaponHolster.get_child(0).has_method("hit"):
+			$WeaponHolster.get_child(0).hit()
+
+

@@ -24,6 +24,7 @@ func die():
 	$AnimatedSprite2D.play("defeat")
 	$DeathTimer.start(N_FRAMES/FPS)
 	dead = true
+	velocity = Vector2(0,0)
 	
 	
 func really_die():

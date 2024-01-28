@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://btxg6pnogbtyu"]
+[gd_scene load_steps=8 format=3 uid="uid://btxg6pnogbtyu"]
 
 [ext_resource type="Texture2D" uid="uid://dcb23ll4vwm4g" path="res://sprites/Objetos/spriteBuzina.png" id="1_0wl05"]
+[ext_resource type="Script" path="res://Scenes/Objetos/Weapon.gd" id="1_n768e"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k1k8y"]
 atlas = ExtResource("1_0wl05")
@@ -25,8 +26,11 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_vrm2o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k1k8y")
 }],
-"loop": true,
+"loop": false,
 "name": &"default",
 "speed": 5.0
 }]
@@ -35,6 +39,7 @@ animations = [{
 radius = 532.635
 
 [node name="Buzina" type="Node2D"]
+script = ExtResource("1_n768e")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(440, -11)
@@ -49,3 +54,6 @@ collision_mask = 2
 [node name="HitboxPrincipal" type="CollisionShape2D" parent="Hitbox"]
 position = Vector2(631, 19)
 shape = SubResource("CircleShape2D_36y85")
+
+[node name="ReloadTimer" type="Timer" parent="."]
+one_shot = true
