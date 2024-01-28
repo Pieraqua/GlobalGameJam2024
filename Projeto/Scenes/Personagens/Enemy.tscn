@@ -185,10 +185,17 @@ script = ExtResource("1_xjk6i")
 position = Vector2(0, 2)
 sprite_frames = SubResource("SpriteFrames_8adad")
 animation = &"defeat"
-frame_progress = 0.701998
+frame_progress = 0.236305
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyBody"]
 visible = false
 shape = SubResource("CircleShape2D_rkfnt")
 
 [node name="DeathTimer" type="Timer" parent="EnemyBody"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="EnemyBody"]
+
+[node name="ColorRect" type="ColorRect" parent="EnemyBody/CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.94902, 0, 0.207843, 1)

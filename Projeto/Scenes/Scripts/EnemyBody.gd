@@ -37,6 +37,29 @@ func hit(damage):
 	else:
 		hitpoints -= damage
 
+func _process(delta):
+	var viewport_size = get_viewport_rect().size
+	var show_arrow = false
+	var arrow_pos = get_viewport_rect().size/2 +  self.global_position - player.global_position
+	if(arrow_pos.x > viewport_size.x - 64):
+		arrow_pos.x = viewport_size.x - $CanvasLayer/ColorRect.size.x
+		show_arrow = true
+	if(arrow_pos.x < 64):
+		arrow_pos.x = 0
+		show_arrow = true
+	if(arrow_pos.y > viewport_size.y - 64):
+		arrow_pos.y = viewport_size.y - $CanvasLayer/ColorRect.size.y
+		show_arrow = true
+	if(arrow_pos.y < 64):
+		arrow_pos.y = 0
+		show_arrow = true
+	
+	if show_arrow:
+		$CanvasLayer/ColorRect.position = arrow_pos
+	else:
+		$CanvasLayer/ColorRect.position = get_viewport_rect().size
+	pass
+
 func _physics_process(_delta):
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
