@@ -37,27 +37,39 @@ func hit(damage):
 	else:
 		hitpoints -= damage
 
-func _process(delta):
+func _process(_delta):
 	var viewport_size = get_viewport_rect().size
 	var show_arrow = false
 	var arrow_pos = get_viewport_rect().size/2 +  self.global_position - player.global_position
-	if(arrow_pos.x > viewport_size.x - 64):
-		arrow_pos.x = viewport_size.x - $CanvasLayer/ColorRect.size.x
+	
+	# Flecha para a direita
+	if(arrow_pos.x > viewport_size.x - 4 * 
+		$AnimatedSprite2D.get_sprite_frames().get_frame_texture("walk",0).get_size().x):
+		arrow_pos.x = viewport_size.x - $CanvasLayer/Frecha.get_rect().size.x + 10
 		show_arrow = true
-	if(arrow_pos.x < 64):
-		arrow_pos.x = 0
+		$CanvasLayer/Frecha.set_rotation_degrees(90)
+	# Flecha para a esquerda
+	if(arrow_pos.x < 4 * $AnimatedSprite2D.get_sprite_frames().get_frame_texture("walk",0).get_size().x):
+		arrow_pos.x = 0 + 4
 		show_arrow = true
-	if(arrow_pos.y > viewport_size.y - 64):
-		arrow_pos.y = viewport_size.y - $CanvasLayer/ColorRect.size.y
+		$CanvasLayer/Frecha.set_rotation_degrees(-90)
+	# Flecha para baixo
+	if(arrow_pos.y > viewport_size.y - 
+		2 * $AnimatedSprite2D.get_sprite_frames().get_frame_texture("walk",0).get_size().y):
+		arrow_pos.y = viewport_size.y - 4#- $CanvasLayer/Frecha.get_rect().size.y
+		$CanvasLayer/Frecha.set_rotation_degrees(180)
+		
 		show_arrow = true
-	if(arrow_pos.y < 64):
-		arrow_pos.y = 0
+	# Flecha para cima
+	if(arrow_pos.y < 2 * $AnimatedSprite2D.get_sprite_frames().get_frame_texture("walk",0).get_size().y):
+		arrow_pos.y = 0 + 4
 		show_arrow = true
+		$CanvasLayer/Frecha.set_rotation_degrees(0)
 	
 	if show_arrow:
-		$CanvasLayer/ColorRect.position = arrow_pos
+		$CanvasLayer/Frecha.position = arrow_pos
 	else:
-		$CanvasLayer/ColorRect.position = get_viewport_rect().size
+		$CanvasLayer/Frecha.position = get_viewport_rect().size
 	pass
 
 func _physics_process(_delta):
