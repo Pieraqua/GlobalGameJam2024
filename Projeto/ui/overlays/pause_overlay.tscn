@@ -17,7 +17,7 @@ layout_mode = 2
 [node name="Label" type="Label" parent="VBoxContainer3"]
 layout_mode = 2
 theme_type_variation = &"HeaderLarge"
-text = "game_paused"
+text = "Jogo pausado"
 horizontal_alignment = 1
 
 [node name="SettingsContainer" type="VBoxContainer" parent="VBoxContainer3"]
@@ -31,7 +31,7 @@ layout_mode = 2
 [node name="BackButton" type="Button" parent="VBoxContainer3/SettingsContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-text = "return_to_menu"
+text = "Retornar ao menu"
 
 [node name="MenuContainer" type="VBoxContainer" parent="VBoxContainer3"]
 unique_name_in_owner = true
@@ -41,14 +41,14 @@ theme_override_constants/separation = 8
 [node name="ResumeButton" type="Button" parent="VBoxContainer3/MenuContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-text = "resume_game"
+text = "Voltar ao jogo"
 
 [node name="SettingsButton" type="Button" parent="VBoxContainer3/MenuContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-text = "settings"
+text = "Configurações"
 
 [node name="ExitButton" type="Button" parent="VBoxContainer3/MenuContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-text = "leave_game"
+text = "Sair do Jogo"
