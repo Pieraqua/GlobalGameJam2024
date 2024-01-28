@@ -158,7 +158,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 5.0
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -181,7 +181,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"run_back",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -210,7 +210,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"run_forward",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -233,7 +233,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"run_left",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -256,7 +256,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"run_right",
-"speed": 5.0
+"speed": 10.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_eekxe"]
@@ -272,9 +272,11 @@ script = ExtResource("1_luyq8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 sprite_frames = SubResource("SpriteFrames_x58em")
-animation = &"run_right"
+animation = &"idle"
+frame_progress = 0.172372
 
 [node name="Area2D" type="Area2D" parent="CharacterBody2D"]
+visible = false
 disable_mode = 2
 collision_mask = 2
 input_pickable = false
@@ -283,6 +285,7 @@ input_pickable = false
 shape = SubResource("CapsuleShape2D_eekxe")
 
 [node name="TerrainCollision" type="CollisionShape2D" parent="CharacterBody2D"]
+visible = false
 shape = SubResource("CapsuleShape2D_eekxe")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
